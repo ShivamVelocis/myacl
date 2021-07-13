@@ -8,7 +8,7 @@ interface configOptions {
   defaultRole?: string;
   decodedObjectName?: string;
   roleSearchPath?: string;
-  denyCallback?: (res?: Response) => {};
+  denyCallback?: (req?: Request,res?: Response,next?: NextFunction) => {};
 }
 interface responseObj {
   status: string;
